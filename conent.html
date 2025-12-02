@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Velocity Motors — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="logo">V</div>
+      <div>
+        <h2>Velocity Motors</h2>
+        <p class="muted small">Curated Car Collection</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Cars</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a class="cta" href="contact.html">Book Test Drive</a>
+    </nav>
+  </header>
+
+  <section class="container contact-section">
+    <h1>Book a Test Drive</h1>
+    <p class="muted">Fill the form and we will contact you shortly.</p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');">
+      <input class="input" placeholder="Full Name" required />
+      <input class="input" placeholder="Email Address" type="email" required />
+      <input class="input" placeholder="Phone Number" required />
+      <input class="input" placeholder="Preferred Model" />
+      <button class="btn-submit" type="submit">Submit Request</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Visit Us</h3>
+      <p class="muted">123 Velocity Street, Auto City</p>
+      <p class="muted">Phone: (555) 010-1234</p>
+      <p class="muted">Email: hello@velocity.example</p>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <p>© 2025 Velocity Motors — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

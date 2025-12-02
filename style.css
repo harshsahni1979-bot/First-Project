@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  width: 100%;
+  background: #000;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  color: #ff4a4a;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 80vh;
+  background: url("car-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #b30000;
+}
+
+/* CARS PAGE */
+.cars-section {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.car-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.car-box img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.car-box h2 {
+  font-size: 28px;
+}
+
+.car-box button {
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* FORM */
+form {
+  width: 90%;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  background: red;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .car-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .car-box img {
+    width: 100%;
+  }
+}
